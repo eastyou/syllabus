@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "syllabus"
+version = "0.1.0"
+description = "教学进度表：周次 CSV 一键生成 A4 可打印进度表"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["syllabus", "lesson-plan", "teacher", "education", "print", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+syllabus = "syllabus.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/syllabus"
+Source = "https://github.com/eastyou/syllabus"
+
+[tool.setuptools]
+packages = ["syllabus"]
